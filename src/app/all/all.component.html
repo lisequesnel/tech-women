@@ -1,0 +1,35 @@
+<p-dataView #dv class="woman-all" [value]="women" paginator="true" rows="3" paginatorPosition="bottom"
+  filterBy="firstname,lastname" [sortField]="sortField" sortOrder="1" emptyMessage="No amazing woman with this name, sorry!">
+    <p-header>
+        <div class="ui-helper-clearfix">
+            <div class="header-container">
+                <div class="filter-container">
+                    <div>
+                        <input type="search" pInputText placeholder="Search" (keyup)="dv.filter($event.target.value)">
+                    </div>
+                </div>
+                <div class="sort-container">
+                    <div>
+                        <p-dropdown [options]="sortOptions" [(ngModel)]="sortField" placeholder="Sort By"
+                            (onChange)="onSortChange($event)" [autoWidth]="false" [style]="{'min-width':'15em'}"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </p-header>
+    <ng-template let-woman pTemplate="listItem">
+        <div class="ui-g woman-details">
+            <div class="ui-g-12 ui-md-3">
+                <img src="assets/women-images/{{woman.firstname}}_{{woman.lastname}}.jpg">
+            </div>
+            <div class="ui-g-12 ui-md-8">
+                <div class="ui-g">
+                    <div class="ui-g-12">
+                      <h2>{{woman.firstname}} {{woman.lastname}}</h2>
+                      <p>{{woman.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-dataView>

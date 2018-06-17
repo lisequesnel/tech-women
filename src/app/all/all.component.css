@@ -1,0 +1,34 @@
+:host >>> .woman-all {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+:host >>> .woman-all .ui-dataview {
+  width: 80%;
+}
+
+:host >>> .woman-all .header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .5em;
+}
+
+:host >>> .woman-all .sort-container {
+  height: 22px;
+  font-size: 12px;
+}
+
+:host >>> .woman-all .woman-details {
+  padding: 2em;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+:host >>> .woman-all .woman-details div:first-child {
+  text-align:center;
+}
+
+:host >>> .woman-all img {
+  max-width: 150px;
+}

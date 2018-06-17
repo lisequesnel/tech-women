@@ -1,0 +1,42 @@
+{
+  "name": "tech-women",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "lint": "ng lint",
+    "cypress": "./node_modules/.bin/cypress",
+    "cypress:open": "./node_modules/.bin/cypress open"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^6.0.3",
+    "@angular/common": "^6.0.3",
+    "@angular/compiler": "^6.0.3",
+    "@angular/core": "^6.0.3",
+    "@angular/forms": "^6.0.3",
+    "@angular/http": "^6.0.3",
+    "@angular/platform-browser": "^6.0.3",
+    "@angular/platform-browser-dynamic": "^6.0.3",
+    "@angular/router": "^6.0.3",
+    "core-js": "^2.5.4",
+    "primeicons": "^1.0.0-beta.6",
+    "primeng": "^6.0.0-beta.1",
+    "rxjs": "^6.0.0",
+    "zone.js": "^0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.6.5",
+    "@angular/cli": "~6.0.5",
+    "@angular/compiler-cli": "^6.0.3",
+    "@angular/language-service": "^6.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.2.1",
+    "cypress": "^3.0.1",
+    "cypress-cucumber-preprocessor": "^1.0.0",
+    "ts-node": "~5.0.1",
+    "tslint": "~5.9.1",
+    "typescript": "^2.7.2"
+  }
+}

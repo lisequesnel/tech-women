@@ -1,0 +1,24 @@
+:host >>> .top-bar .ui-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+:host >>> .top-bar .ui-corner-all {
+  border-radius: 0px;
+}
+
+:host >>> .top-bar .ui-widget-header {
+  border: none;
+}
+
+:host >>> .top-bar .ui-helper-clearfix::before,
+:host >>> .top-bar .ui-helper-clearfix::after {
+  content: none;
+}
+
+:host >>> .top-bar .tab-bar-buttons button {
+  border: none;
+  background-color: inherit;
+}

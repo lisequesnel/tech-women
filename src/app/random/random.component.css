@@ -1,0 +1,19 @@
+:host >>> .woman-card {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  padding: 50px;
+}
+
+:host >>> .woman-card .ui-card-content {
+  display: flex;
+  flex-direction: row;
+}
+
+:host >>> .woman-card .ui-card-content div {
+  padding: 5px;
+}
+
+:host >>> .woman-card img {
+  max-width: 200px;
+}
